@@ -2,6 +2,7 @@ import { pwa } from './app/config/pwa'
 import { appDescription } from './app/constants/index'
 
 export default defineNuxtConfig({
+
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
@@ -9,11 +10,9 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     '@nuxt/eslint',
+    '@tresjs/nuxt',
   ],
-
-  devtools: {
-    enabled: true,
-  },
+  ssr: false,
 
   app: {
     head: {
