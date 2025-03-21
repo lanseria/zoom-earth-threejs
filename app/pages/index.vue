@@ -5,7 +5,7 @@ const { resume } = useRenderLoop()
 
 // 加载多个材质贴图
 const textureMap = await useTexture({
-  map: '/textures/earth2.png', // 基础颜色贴图
+  map: '/textures/8k_earth_daymap.jpg', // 基础颜色贴图
 })
 
 onMounted(() => {

@@ -49,7 +49,6 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2024-08-14',
-
   nitro: {
     esbuild: {
       options: {
@@ -60,6 +59,15 @@ export default defineNuxtConfig({
       crawlLinks: false,
       routes: ['/'],
       ignore: ['/hi'],
+    },
+  },
+  vite: {
+    optimizeDeps: {
+      include: [
+        '@tresjs/cientos',
+        '@tresjs/core',
+
+      ],
     },
   },
 
